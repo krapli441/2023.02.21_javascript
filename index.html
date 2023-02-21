@@ -7,22 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <div>첫번째</div>
+    <div>두번째</div>
+    <div>세번째</div>
+  </div>
   <script>
-    let itsMe = {
-      1: "parkjunhyeong",
-      2 : 29,
-      3 : "doomer",
-      4 : "seo-gu",
-      5 : 2,
-      6 : "all-kind",
-      7 : "house music"
-      // itsMe는 7개의 속성을 가지고 있습니다 or 7개의 키를 가지고 있습니다.
-    }
-    let itsMe1 = ["parkjunhyeong", 29, "doomer", "seo-gu", 2, "all-kind", "house-music"];
-
-    console.log(itsMe[1]);
-
+    let root; 
+    root = document;
+    console.dir(root); // 최상위 객체의 DOM document object를 보고 있는 중
+    let a = root.getElementById('root'); // root <- document. 즉, document.getElementById('root')와 다를 바 없음
+    console.dir(a.children[1]); // 변수 a의 첫 번째 자식을 dir로 확인했음
+    color = a.children[1]; // a의 첫번째 자식을 color라는 변수로 선언함
+    color.style.color='red'; // 이하 color 변수의 style을 바꿔줌
+    color.style.fontSize='48px';
+    color.style.cursor='pointer';
+    color.innerText="sesese";
     </script>
 </body>
 </html>
