@@ -7,6 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div id="root"></div>
+  <script>
+    let kim = {
+      a : "김동주",
+      b : "김은아",
+      c : "김종윤",
+      d : "김지섭",
+      e : "김형진"
+    } // 김씨를 한 번에 묶어서 처리하고 싶을 때 객체를 사용함.
+      // kim이라는 변수로 추상화(abstraction)되었다.
+
+    console.log(kim);
+    let root = document.getElementById("root");
+    console.dir(root);
+    </script>
 </body>
 </html>
