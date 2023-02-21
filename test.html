@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+
+    let root= document.getElementById('root');
+    let start = {
+      at : "집",
+      order : ["기상", "머리감기", "머리 말리기", "옷 갈아입기", "아침 식사", "강아지 간식", "가방 챙기기", "헤드폰 착용", "외출"]
+    };
+    let inProgress = {
+      at : "가는 길",
+      order : ["외출", "엘레베이터 호출", "엘레베이터 탑승", "13층 버튼", "엘레베이터 하차", "현관문 이동", "담 넘기", "버스정류장 이동", "301번 탑승", "스마트폰", "음악 듣기", "웹서핑", "은하수네거리 하차"]
+    };
+    let end = {
+      at : "학원",
+      order : ["오라클빌딩 도착", "계단", "3층으로 이동", "학원 도착", "강의실 이동", "입실 QR코드", "착석", "가방 풀기", "맥북 꺼내기", "충전기 꺼내기", "인터넷 어댑터 꺼내기", "맥북 연결", "가방에서 물병 꺼내기", "커피 챙기기", "휴게실로 이동", "커피 타기", "착석"]
+    };
+
+    let lifeGoesOn = [start, inProgress, end];
+    console.log(lifeGoesOn);
+    console.dir(start.order[2]);
+    root.innerHTML = "제가 아침에 일어날 때 가장 싫어하는 것은 " + start.at + "에서 " + start.order[2] + "입니다." + "가장 좋아하는 순간은 " + inProgress.at + "에서 " + inProgress.order[10] + "입니다." + end.at + "에 도착한 뒤 가장 먼저 하는 것은 " + end.order[7] + "입니다.";
+  </script>
+</body>
+</html>
