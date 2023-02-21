@@ -9,18 +9,29 @@
 <body>
   <div id="root"></div>
   <script>
-    let kim = {
-      a : "김동주",
-      b : "김은아",
-      c : "김종윤",
-      d : "김지섭",
-      e : "김형진"
-    } // 김씨를 한 번에 묶어서 처리하고 싶을 때 객체를 사용함.
-      // kim이라는 변수로 추상화(abstraction)되었다.
+    let itsMe = {
+      name: "parkjunhyeong",
+      age : 29,
+      job : "doomer",
+      home : "seo-gu",
+      brother : 2,
+      game : "all-kind",
+      music : "house music",
+      hobby : {
+        first : "listning music",
+        second : "game",
+        third : "sleeping"
+      }
+    }
+    
+    let a = "ho";
+    let b = "bby";
 
-    console.log(kim);
-    let root = document.getElementById("root");
-    console.dir(root);
+    console.log(itsMe.home);
+    console.log(itsMe["age"]);
+    console.log(itsMe.hobby.third);
+    console.log(itsMe[a + b]["second"]);
+    console.log(itsMe.hobby["third"]);
     </script>
 </body>
 </html>
